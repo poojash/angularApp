@@ -1,0 +1,17 @@
+{
+		"John Doe" :{
+			"name":"John Doe",
+			"biography" : "John Doe is author of HTML5 Fundamentals",
+			"email":"john@123.com"
+		},
+		"Jack Doe" :{
+			"name":"Jack Doe",
+			"biography" : "Jack Doe is author of HTML5 Fundamentals",
+			"email":"Jack@123.com"
+		},
+		"Rose Doe" :{
+			"name":"Rose Doe",
+			"biography" : "Rose Doe is author of HTML5 Fundamentals",
+			"email":"Rose@123.com"
+		}
+}

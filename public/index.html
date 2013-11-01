@@ -1,0 +1,54 @@
+<!doctype html>
+<html ng-app="lms">
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
+	<script type="text/javascript"  src="js/routes.js"></script>
+	<script type="text/javascript"  src="js/controllers/app.js"></script>
+	<script type="text/javascript"  src="js/controllers/course.js"></script>
+	
+	
+  </head>
+<body>
+	<div class="container" ng-controller="AppCtrl">
+		<h1>Angular Learning Courses</h1>
+		
+		<ul class="nav nav-pills">
+		  <li ng-class="homeActive">
+			<a href="#">Home</a>
+		  </li>
+		   <li ng-class="coursesActive">
+			<a href="#/courses">Courses</a>
+		  </li>
+		   <li ng-class="contactActive">
+			<a href="#/contact">Contact Us</a>
+		  </li>
+		</ul>
+		<hr>
+		<div ng-view></div>
+		<hr>
+		
+	 <div id="footer" class="row">
+     <div class="col-xs-6">
+    <address>
+		{{about.address}}</br>
+		<abbr title="Phone">P:</abbr> {{about.phoneNumber}}
+	</address>
+	</div>
+	 <div class="col-xs-6">
+	<address>
+	  <strong>John Doe</strong><br>
+	  <a href="mailto:#">{{about.email}}</a>
+	</address>
+	</div>
+    </div>
+
+	
+	</div>
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+</body>
+  
+</html>

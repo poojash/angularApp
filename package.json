@@ -1,0 +1,14 @@
+{
+  "name": "Airport",
+  "version": "0.0.0",
+  "description": "Airport App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Pooja Sharma",
+  "dependencies": {
+    "express": "~3.1.1"
+  }
+}

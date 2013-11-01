@@ -1,0 +1,32 @@
+<div ng-controller="courseCtrl">
+<div class="jumbotron">
+	  <h1>{{about.companyName | uppercase}}</h1>
+
+
+	   <blockquote>
+		<p>{{about.moto}}</p>
+		<small>{{about.quoteby}}</small>
+	   </blockquote>
+	  <p><a class="btn btn-primary btn-lg" role="button" href="#/courses">Learn more</a></p>
+	</div>
+	<hr>
+	  <div class="row">
+		  <div class="col-md-8">
+			<h1>About Us</h1>
+			{{about.about}}
+		  </div>
+		  <div class="col-md-4 well">
+		  <h3>Courses</h3>
+		  <hr>
+			<ul class="list-unstyled">
+				<li ng-repeat="course in courses">
+				<a href="#">
+					{{course.name}}
+					
+				</a>	
+				</li>
+			</ul>
+			
+		  </div>
+	 </div>
+</div>
